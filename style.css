@@ -1,3 +1,23 @@
+* {box-sizing: border-box;
+}
+
+/* Header and Nav */
 h1{
     color: blue;
 }
+
+nav a{
+    color: violet;
+}
+
+/* Projects */
+.project-card{
+    padding: 20px;
+    margin: 16px;
+    border: 3px solid #ccc;
+}
+
+h2{
+    color: palevioletred;
+}
+
