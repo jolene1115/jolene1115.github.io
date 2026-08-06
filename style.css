@@ -1,9 +1,27 @@
+:root{
+    
+
+}
+
 * {box-sizing: border-box;
+}
+
+body {
+    max-width: 900px;
+    margin: 0, auto;
+    padding: 0 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
 }
 
 /* Header and Nav */
 h1{
     color: blue;
+}
+
+h2{
+    color: palevioletred;
 }
 
 nav a{
@@ -15,9 +33,12 @@ nav a{
     padding: 20px;
     margin: 16px;
     border: 3px solid #ccc;
+    flex: 1 1 300px;
 }
 
-h2{
-    color: palevioletred;
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
