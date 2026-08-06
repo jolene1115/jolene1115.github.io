@@ -1,6 +1,8 @@
 :root{
-    
-
+    --accent: darkslateblue;
+    --links: lightslategray;
+    --text-dark: #222;
+    --text-light: #666;
 }
 
 * {box-sizing: border-box;
@@ -15,17 +17,21 @@ body {
     color: #222;
 }
 
-/* Header and Nav */
+/* Headers and Nav */
 h1{
-    color: blue;
+    color: var(--accent);
 }
 
 h2{
-    color: palevioletred;
+    color: var(--accent);
 }
 
 nav a{
-    color: violet;
+    color: var(--links);
+}
+
+#contact a{
+    color: var(--links);
 }
 
 /* Projects */
@@ -34,6 +40,12 @@ nav a{
     margin: 16px;
     border: 3px solid #ccc;
     flex: 1 1 300px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .projects-grid {
